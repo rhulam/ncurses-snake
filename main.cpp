@@ -1,5 +1,4 @@
-#include <iostream>
-#include <ncurses.h>
+#include "snake.h"
 
 using namespace std;
 
