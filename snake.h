@@ -5,6 +5,7 @@
 #include <ncurses.h>
 #include <vector>
 #include <cstdlib>
+#include <unistd.h>
 
 struct snakepart
 {
@@ -15,7 +16,8 @@ struct snakepart
 
 class snakeclass {
     int points, del, maxwidth, maxheigth;
-    char direction, partchar, oldchar, foo;
+    char direction;
+    unsigned char oldchar, foo, partchar;
     bool get;
     snakepart food;
     std::vector<snakepart> snake;
